@@ -1,3 +1,4 @@
+//comentario//
 let precioProducto: number = Number(prompt("Ingrese el prcio del producto:"));
 let cantidad: number = Number(prompt("Ingrese la cantidad:"));
 let compra: number = precioProducto * cantidad;
