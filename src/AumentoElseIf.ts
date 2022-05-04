@@ -4,10 +4,10 @@ let aumento: number;
 if (sueldo > 0 && sueldo <= 15000) {
   aumento = sueldo * 1.2;
   console.log("El aumento de sueldo del empleado es:", aumento - sueldo);
-} else if (sueldo > 15000 && sueldo <= 20000) {
+} else if (sueldo >= 15001 && sueldo <= 20000) {
   aumento = sueldo * 1.1;
   console.log("El aumento de sueldo del empleado es:", aumento - sueldo);
-} else if (sueldo > 20000 && sueldo <= 25000) {
+} else if (sueldo >= 20001 && sueldo <= 25000) {
   aumento = sueldo * 1.05;
   console.log("El aumento de sueldo del empleado es:", aumento - sueldo);
 } else {
