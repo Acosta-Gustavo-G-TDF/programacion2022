@@ -1,5 +1,4 @@
 let numero: number;
-let cont: number = 0;
 let contPos: number = 0;
 let contNeg: number = 0;
 let acum: number;
