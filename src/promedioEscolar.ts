@@ -23,7 +23,7 @@ function promedioAnual(
   }
 }
 
-function mostar(
+/*function mostar(
   alum: string[],
   not1: number[],
   not2: number[],
@@ -34,6 +34,29 @@ function mostar(
     console.log("El alumno es:", alum[i]);
     console.log("Sus notas son:", not1[i], not2[i], not3[i]);
     console.log("Y su promedio es:", prom[i]);
+  }
+}*/
+
+function buscarYMostrarAlumno(
+  alum: string[],
+  not1: number[],
+  not2: number[],
+  not3: number[],
+  prom: number[]
+) {
+  let ban: boolean = false;
+  let bus = prompt("Ingrese el nombre del alumno a buscar:");
+  for (let i: number = 0; i < cantidad; i++) {
+    if (bus === alum[i]) {
+      ban = true;
+      console.log("ALUMNO ENCONTRADO:");
+      console.log("Alumno:", alum[i]);
+      console.log("Sus notas son:", not1[i], not2[i], not3[i]);
+      console.log("Y su promedio es:", prom[i]);
+    }
+    if (ban === false) {
+      console.log("Alumno no encontrado");
+    }
   }
 }
 
@@ -49,4 +72,4 @@ let promedio: number[] = new Array(cantidad);
 cargarNombres(alumnos);
 cargarNotas(nota1, nota2, nota3);
 promedioAnual(promedio, nota1, nota2, nota3);
-mostar(alumnos, nota1, nota2, nota3, promedio);
+buscarYMostrarAlumno(alumnos, nota1, nota2, nota3, promedio);
